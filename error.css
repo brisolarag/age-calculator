@@ -1,0 +1,15 @@
+.error-msg {
+    position: absolute;
+    top: 100px;
+}
+
+.error-msg h5, p {
+    text-align: center;
+    color: red;
+}
+
+
+.invisibility {
+    display: none;
+}
+

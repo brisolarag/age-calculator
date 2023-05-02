@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+
+    <!-- Style Css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="error.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="error-msg campos-em-branco invisibility">
+                <h5>Error!</h5>
+                <p>Empty spaces.</p>
+            </div>
+            <div class="error-msg day-error invisibility">
+                <h5>Error!</h5>
+                <p>Invalid day.</p>
+            </div>
+            <div class="error-msg month-error invisibility">
+                <h5>Error!</h5>
+                <p>Invalid month.</p>
+            </div>
+            <div class="error-msg futureDate-error invisibility">
+                <h5>Error!</h5>
+                <p>Future Date.</p>
+            </div>
+
+            <div class="author">
+                <h5>Created by:</h5>
+                <p>Gabriel Brisolara</p>
+            </div>
+            <div class="box">
+                
+                <div class="inputs">
+                    
+                    <div class="day">
+                        <h4>DAY</h4>
+                        <input class="input-date" id="input_date" type="text">                 
+                    </div>
+
+                    <div class="month">
+                        <h4>MONTH</h4>
+                        <input class="input-date" id="input_month" type="text">
+                    </div>
+
+                    <div class="year">
+                        <h4>YEAR</h4>
+                        <input class="input-date" id="input_year" type="text">
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <button class="calculate-btn" onclick="calculate()"><i class="fa-solid fa-arrow-down" style="color: #ffffff;"></i></button>
+
+                <div class="result">
+                    <h1><i class="years_result">-</i> years</h1>
+                    <h1><i class="months_result">-</i> months</h1>
+                    <h1><i class="days_result">-</i> days</h1>
+                </div>
+                
+                
+            </div>
+            
+
+
+        </div>
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/9b6ce3bd8f.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
